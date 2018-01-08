@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ToDoList"
+    x:Class="ToDoList.ToDoListPage"
+    Padding="25">
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button
+            Grid.Row="0"
+            Text="Add a new To-Do item"
+            Clicked="Handle_Clicked" />
+        
+        <ListView
+            Grid.Row="1"
+            x:Name="lvToDoItems" />
+    </Grid>
+</ContentPage>

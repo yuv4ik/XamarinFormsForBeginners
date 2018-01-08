@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ToDoList.AddANewToDoItemPage"
+    Padding="25">
+	<StackLayout
+        Orientation="Vertical">
+        <Label
+            Text="Description:" />
+        <Entry
+            x:Name="eDescription"
+            Placeholder="Please enter a description" />
+        <Button
+            Text="Add a new to-do item"
+            Clicked="HandleAddNewToDoItemClick" />
+        <Button
+            Text="Cancel"
+            Clicked="HandleCancelClick" />
+    </StackLayout>
+</ContentPage>
